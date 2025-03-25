@@ -14,16 +14,16 @@ fun main() {
     println("Enter third number:")
     var num3 = read.nextInt()
 
-
-    var largest = if (num1 >= num2 && num1 >= num3) {
-        num1
-    } else if (num2 >= num1 && num2 >= num3) {
-        num2
-    } else {
-        num3
+    if(num1>num2 && num1>num3){
+        println("$num1 is the largest number")}
+    else if (num2 > num1 && num2>num3){
+        println("$num2 is the largest number")
     }
 
-    println("The largest number is: $largest")
+    else{
+        println("$num3 is the largest number")
+    }
+
 
 
 
