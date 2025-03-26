@@ -9,7 +9,7 @@ fun main() {
     var x = read.nextInt()
 
     println("Select an operator(+,-,*,/):")
-    var operator = read.nextInt()
+    var operator = readln()
 
 
 
@@ -19,17 +19,17 @@ fun main() {
 
 
     var answer = when(operator){
-        1-> x + y
-        2 -> x-y
-        3 -> x*y
-        4 -> x/y
+        "+" -> x + y
+        "-" -> x-y
+        "*"-> x*y
+        "/" -> x/y
 
         else -> "Invalid operator entered"
 
 
     }
 
-    println(" The answer is $answer")
+    println("The answer is $answer")
 
 
 
